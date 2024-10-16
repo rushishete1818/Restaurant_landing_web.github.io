@@ -1,0 +1,575 @@
+html,body{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto" , sans-serif;
+    background-color: #F1F8FF;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: "Roboto" , sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 550;
+}
+
+ul{
+    list-style: none;
+}
+.hover-link{
+    color: var(--primary-text-color);
+}
+
+
+/* utility classes */
+
+.container{
+    max-width: 1350px;
+    margin-inline: auto;
+    padding-inline: 10px;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+}
+
+.button{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.left{
+    left: 120px;
+}
+
+/* nav bar */
+
+
+.background-img1{
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0, 0.7) , rgb(0, 0, 0, 0.7)),url(background\ chilli.jpg); 
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 1000px;
+    position: relative;
+}
+.background-img1 img{
+    width: 100%;
+}
+
+.rotate{
+    animation: rotation 16s;
+}
+.linear{
+    animation-timing-function: linear;
+}
+.infinite{
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+.nav-container{
+    width: 100%;
+    justify-content: space-around;
+    height: 90px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #484A4C;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+}
+.company-logo img{
+    max-width: 90px;
+} 
+.company-logo{
+    max-width: 900px;
+    align-items: center;
+}
+.company-logo h2{
+    font-family:'Righteous', sans-serif;
+    color: rgb(253, 164, 11);
+    font-size: 2rem;
+}
+.nav-links ul{
+    gap: 35px;
+    font-size: 17px;
+    align-items: center;
+    color: #FDFDFD;
+}
+
+.hover-link:hover{
+    color: rgb(253, 164, 11);
+}
+.nav-links{
+    flex-basis: 750px;
+}
+.sign-button{
+    padding: 14px 26px;
+    background-color: rgb(253, 164, 11);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+}
+.sign-button:hover{
+    background-color: #FDFDFD;
+    color: rgb(253, 164, 11);
+    transition: 0.2s ease;
+    border: 2px solid orange;
+}
+.sign-button:active{
+    opacity: 0.6;
+}
+
+.nav-toggle{
+    display: none;
+    margin-left: 80px;
+}
+
+.nav-toggle i{
+    font-size: 1.3rem;
+    color: #FDFDFD;
+}
+.nav-toggle i:hover{
+    color: rgb(240, 191, 98);
+}
+
+
+/* header */
+
+.header-container{
+    padding-block: 40px;
+    position: absolute;
+    top: 250px;
+    align-items: center;
+    gap: 30px;
+}
+.header-desc{
+    min-width: 50vw;
+    color: white;
+}
+.header-desc h1{
+    margin-bottom: 25px;
+}
+.header-desc p{
+    max-width: 90%;
+}
+
+.header-img img{
+    width: 100%;
+}
+.book-button{
+    padding: 20px 40px;
+    background-color: rgb(253, 164, 11);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: white;
+    margin-top: 25px;
+}
+.book-button:hover{
+    background-color: rgb(161, 106, 3);
+    transition: 0.2s ease;
+}
+.book-button:active{
+    opacity: 0.6;
+}
+
+
+/* slideshow */
+
+.slideshow-container{
+    width: 100%;
+    margin-top: 50px;
+    background-color: #FDFDFD;
+    overflow: hidden;
+    gap: 0px;
+    position: relative;
+    padding-inline: 10px;
+}
+.slides{
+    width: 100%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0%);
+    }
+    10%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    30%{
+        transform: translateX(-200%);
+    }
+    40%{
+        transform: translateX(-300%);
+    }
+    50%{
+        transform: translateX(-400%);
+    }
+    60%{
+        transform: translateX(-500%);
+    }
+    70%{
+        transform: translateX(-600%);
+    }
+    80%{
+        transform: translateX(-700%);
+    }
+    90%{
+        transform: translateX(-800%);
+    }
+    100%{
+        transform: translateX(-900%);
+    }
+}
+.slides img{
+    width: 675px;
+    height: 400px;
+    background-size: cover;
+}
+
+.pre-next{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    margin-inline: 30px;
+}
+
+
+
+/* speciality section */
+
+.speciality-section{
+    margin-block: 5px;
+}
+
+.speciality-container{
+    justify-content: space-between;
+    padding: 150px 20px;
+    background-color:#FDFDFD;
+    flex-wrap: wrap;
+}
+.card{
+    width: 23%;
+    height: 300px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    padding: 30px 20px;
+    background-color: white;
+}
+.card:hover{
+    background-color: rgb(253, 164, 11);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.card:hover .card-img{
+    background-color: white;
+}
+
+.card img{
+    max-width: 60px;
+}
+.card p{
+    font-size: 1rem;
+    max-width: 30vw;
+}
+.card h3{
+    margin-block: 12px;
+}
+
+/* main section */
+
+.menu-header{
+    margin-bottom: 30px;
+}
+.menu-header h3{
+    margin-bottom: 20px;
+    font-family:'Lobster', sans-serif;
+    color: rgb(253, 164, 11);
+    font-size: 2rem;}
+.menu-section{
+    margin-top: -10px;
+}
+
+.header-menu-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#FDFDFD;
+    padding-block: 50px;
+}
+
+.breakfast-menu-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    /* background-color:#FDFDFD; */
+}
+
+.lunchveg-menu-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color:#FDFDFD; */
+}
+.dinnernonveg-menu-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color:#FDFDFD; */
+}
+
+
+.icon{
+    font-size: 40px;
+    margin-right: 15px;
+    width: 40px;
+}
+.food-types{
+    gap: 50px;
+}
+.food-item-text{
+    color: black;
+}
+.food-item span{
+    color: rgb(143, 141, 141);
+    font-weight: 100;
+}
+.food-item:hover{
+
+}
+
+/*  hero background */
+
+.hero-img-breakfast{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0, 0.7) , rgb(0, 0, 0, 0.8)), url(Png\ burger-background-removebg-preview.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.hero-lunch-img{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0, 0.7) , rgb(0, 0, 0, 0.7)), url(thali2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero1-dinner-nonveg{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0, 0.7) , rgb(0, 0, 0, 0.7)), url(Png\ background_roasted-chicken-plate-removebg-preview.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.hero2-dinner-nonveg{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0, 0.7) , rgb(0, 0, 0, 0.8)), url(Png\ background-biryani-with-chicken-pieces--preview.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* main menu */
+
+
+
+.breakfast-main-menu{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    width: 80%;
+    gap: 30px;
+    padding:  8px;
+    position: absolute;
+}
+.lunch-main-menu{
+    flex-direction: column;
+    margin-top: 80px;
+    width: 80%;
+    gap: 30px;
+    padding:  8px;
+    position: absolute;
+}
+
+.dinnernonveg-main-menu{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    width: 80%;
+    gap: 30px;
+    padding:  8px;
+    position: absolute;
+}
+.menu-card{
+    width: 95%;
+    height: 80px;
+    padding: 5px;
+    margin-inline: 30px;
+    border-radius: 10px;
+}
+.menu-card img{
+    transition: 0.7s ease;
+}
+.menu-card img:hover{
+    transform: scale(1.4);
+}
+.menu-card:hover{
+    box-shadow: 0 0 4px rgb(247, 131, 36);
+    border: 1px solid orange;
+    transition: 0.2s ease;
+}
+
+.menu-heading{
+    color: orange;
+    color:#FDFDFD;
+
+}
+
+.menu-card img{
+    width: 100px;
+    object-fit: cover;
+    margin-right: 40px;
+    border-radius: 4px;
+}
+.menu-card h3{
+    font-size: 20px;
+    color: white;
+    margin-top: 25px;
+}
+
+
+
+/* footer */
+
+.footer-container{
+    padding-block: 30px;
+    margin-top: 40px;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(97, 123, 145);
+}
+.footer-box{
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-box a{
+    color: #F1F8FF;
+    font-size: 1.2rem;
+}
+.footer-box a:hover{
+    color: rgb(5, 5, 185);
+    text-decoration: underline white;
+    transition: 0.3s ease-out;
+}
+
+/* sub footer */
+
+.subfooter-box{
+   background-color: #b9cde4;
+   justify-content: center;
+   padding-block: 30px;
+   align-items: center;
+   gap: 50px;
+}
+.subfooter-box a {
+    font-size: 1.7rem;
+    background-color: white;
+    color: black;
+    padding: 3px 5px;
+    border-radius: 6px;
+}
+
+.subfooter-box .facebook:hover{
+    color: rgb(51, 51, 248);
+    transition: 0.2s ease-in;
+}
+.subfooter-box .insta:hover{
+    background-image: linear-gradient(purple, red, orange) ;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.subfooter-box .x:hover{
+    background-color: black;
+    color: #FDFDFD;
+    transition: 0.2s ease-in-out;
+
+}
+.subfooter-box .youtube:hover{
+    color: rgb(254, 7, 7);    
+    transition: 0.2s ease-in-out;
+
+}
+.subfooter-box .linkdin:hover{
+    color: rgb(51, 51, 248);    
+    transition: 0.2s ease-in-out;
+
+}
+.subfooter-box .whatsapp:hover{
+    background-color: rgb(11, 247, 97);
+    background-image: linear-gradient(rgba(11,247,97), rgba(11,120,27));
+    color: #F1F8FF;   
+    transition: 0.2s ease-in-out;
+
+}

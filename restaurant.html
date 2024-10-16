@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="media-quries.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Ocean Turtle</title>
+</head>
+<body>
+    <div class="background-img1">
+        <!-- <img src="chilli.jpg" alt=""> -->
+    </div>
+
+    <!-- nav bar -->
+    <nav>
+        <div class="flex nav-container left">
+            <div class="company-logo flex">
+                <div class="logo-img">
+                    <img src="turtle2_-_Copy-removebg-preview.png" alt="">
+                </div>
+                <div class="logo-text">
+                    <h2>The Ocean Turtle</h2>
+                </div>
+               
+            </div>
+           
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="#" class="hover-link" style="color: rgb(208, 134, 7);">HOME</a></li>
+                    <li><a href="#" class="hover-link">ABOUT</a></li>
+                    <li><a href="#" class="hover-link">SERVICE</a></li>
+                    <li><a href="#" class="hover-link">MENU</a></li>
+                    <li><a href="#" class="hover-link">PAGES</a></li>
+                    <li><a href="#" class="hover-link">CONTACT</a></li>
+                    <button class="sign-button button" type="submit">Sign in</button>
+                </ul>
+            </div>
+
+            <a href="#" class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle')
+        const navLinks = document.getElementById('nav-links')
+
+        toggleButton.addEventListener('click' , () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
+
+    <!-- header -->
+    <header>
+        <div class="container flex header-container left">
+            <div class="header-desc">
+                <h1>Enjoy our <br> delicious meal</h1>
+                <p>Healthy food to live a healthier life in the future. Enjoy a healthy life by eating healthy food that have extraordinary flavours that make your life healthier for today and in the future</p>
+                <button class="book-button button" type="submit">BOOK A TABLE</button>
+            </div>
+            <div class="header-img">
+                <img class="rotate linear infinite" src="hero.png" alt="">
+            </div>
+        </div>
+       
+    </header>
+
+
+    <section class=" container slideshow-container flex">
+        <a href="#" class="slides">
+            <img src="slide indian food.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="breakfast slider.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="slide chicken-skewers-with-slices-sweet-peppers-dill_2829-18809.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="slide-lamb-ragout-with-fried-onion-carrot-tomato-sauce-greens-vegetable-salad-table_141793-4744.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="burger slide.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="slide pizzas.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="chicken slide.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="slide top-view-table-full-food_23-2149209225.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="slide tikka.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="slide roll.avif" alt="">
+        </a>
+        <a href="#" class="slides">
+            <img src="slide pasta.avif" alt="">
+        </a>  
+        
+        <div class="pre-next flex">
+            <a href="#" id="prev">
+                &#8810;
+            </a>
+            <a href="#" id="next">
+                &#8811;
+            </a>
+         </div>
+    </section>
+
+
+    
+
+    <!-- speciality section -->
+
+    <section class="speciality-section">
+        <div class="container flex speciality-container" >
+            <div class="card">
+                <img  src="chefs.png" alt="">
+                <h3>Master Chefs</h3>
+                <p>Our chefs is profestionals in food making. and most important maintain the proper hygeine in restaurant</p>
+            </div>
+            <div class="card">
+                <img class="card-img" src="spoonj.png" alt="">
+                <h3>Quality Food</h3>
+                <p>Ocen turtle chefs is making best and quality food and we use fresh vegetables and meat.</p>
+            </div>
+            <div class="card">
+                <img src="cart.jpeg" alt="">
+                <h3>Online Order</h3>
+                <p>For online order go to our Ocean Turtle restaurant website go to menu & select your dish and place order</p>
+            </div>
+            <div class="card">
+                <img src="headphone.png" alt="">
+                <h3>24/7 Sercice</h3>
+                <p>We give the 24/7 service you can order online or come to the restaurant at any time</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- main section -->
+    <main class="menu-section">
+        <div class="container flex header-menu-container">
+           <div class="menu-header">
+               <h3>Food menu</h3>
+               <h2>Most popular items</h2>
+            </div>
+            <div class="food-types flex">
+                <a class="food-item flex" href="">
+                <i class="fa-solid fa-mug-hot icon" style="color: #fba613;"></i>                   
+                <label class="food-item-text" for=""> <span>Popular</span><br> Breakfast</label>
+                </a>
+                <hr>
+                <a class="food-item flex" href="">
+                <i class="fa-solid fa-burger icon" style="color: #feb02a;"></i>                    
+                <label class="food-item-text"for=""> <span>Special</span> <br> Lunch</label>
+                </a>
+                <hr>
+                <a class="food-item flex" href="">
+                    <img class="icon" src="spoonj.png" alt="">
+                    <label class="food-item-text" for=""> <span>Lovely</span> <br> Dinner</label>
+                </a>
+            </div>
+        </div>
+
+        <div class="container flex breakfast-menu-container">
+            
+            <div class="hero-img-breakfast">
+                    
+            </div>
+
+            <div class="breakfast-main-menu flex">
+
+                <h2 class="menu-heading">--- { Breakfast } ---</h2>
+
+                <a class="menu-card flex" href="">
+                    <img src="idli.jpeg" alt="">
+                    <h3>Idli sambar</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="samosa.jpeg" alt="">
+                    <h3>Samosa</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="momos.jpeg" alt="">
+                    <h3>Steam Momos</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="dosa.jpeg" alt="">
+                    <h3>Dosa</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="sandwich.jpeg" alt="">
+                    <h3>Veg Sandwich</h3>
+                </a>
+                
+                <a class="menu-card flex" href="">
+                    <img src="pizza.jpeg" alt="">
+                    <h3>Veg Margherita</h3>
+                </a>
+
+            </div>
+        </div>
+        
+        
+        <div class="container flex lunchveg-menu-container">
+
+           <div class="hero-lunch-img">
+
+           </div>
+            <div class="lunch-main-menu flex">
+
+                <h2 class="menu-heading">--- { Lunch (Veg) } ---</h2>
+
+                 <a class="menu-card flex"href="">
+                    <img src="thali.webp" alt="">
+                    <h3>Shahi Veg Thali</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="panner.jpg" alt="">
+                    <h3>Panner Masala</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="kadhai mushroom.jpeg" alt="">
+                    <h3>Kadhai Mushroom</h3>
+                </a> 
+                <a class="menu-card flex" href="">
+                    <img src="mushroom biryani.jpeg" alt="">
+                    <h3>Mushroom Biryani</h3>
+                </a>
+
+            </div>
+        </div>
+        
+        
+        <div class="container flex dinnernonveg-menu-container">
+
+            <div class="hero1-dinner-nonveg">
+                
+            </div>
+
+            <div class="hero2-dinner-nonveg">
+                
+            </div>
+
+
+            <div class="dinnernonveg-main-menu flex">
+
+                <h2 class="menu-heading">---{ Lunch and Dinner (Non-veg) --- }</h2>
+
+                <a class="menu-card flex" href="">
+                    <img src="anda biryani.jpeg" alt="">
+                    <h3>Anda Biryani</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="byryani.jpeg" alt="">
+                    <h3>Chicken Biryani </h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="prawns biryani.jpeg" alt="">
+                    <h3>Prawns Biryani</h3>
+                </a>
+               
+                <a class="menu-card flex" href="">
+                    <img src="butter chicken.jpeg" alt="">
+                    <h3> Butter chicken</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="chicken kadhai.jpeg" alt="">
+                    <h3>Mutton Kadhai</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="chicken plate.jpeg" alt="">
+                    <h3>chicken kadhai</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="crab curry.jpeg" alt="">
+                    <h3>Crab Curry</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="crab masala.jpeg" alt="">
+                    <h3>Crab Masala</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="fish rassa.jpeg" alt="">
+                    <h3>Fish Curry</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="grilled fish.jpg" alt="">
+                    <h3>Roasted Fish</h3>
+                </a>
+                
+                <a class="menu-card flex" href="">
+                    <img src="prawns masala.jpeg" alt="">
+                    <h3>Prawns Masala</h3>
+                </a>
+                <a class="menu-card flex" href="">
+                    <img src="prawns roasted.jpeg" alt="">
+                    <h3>Roasted Prawns</h3>
+                </a>
+            </div>
+        </div>
+    </main>
+
+<!-- footer -->
+    <footer>
+        <div class="footer-container flex">
+            <div class="footer-box flex">
+                <h3>Contact</h3>
+                <a href="">Sign Up</a>
+                <a href="">Call Now</a>
+                <a href="">Refer a Restaurant</a>
+                <a href="">Beacome a partner</a>
+                <a href="">Write Your Reviews</a>
+                <a href="">Referal Terms</a>
+            </div>
+            <div class="footer-box flex">
+                <h3>Support</h3>
+                <a href="">FAQs</a>
+                <a href="">Contact Support</a>
+                <a href="">Help Center</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of service</a>
+            </div>
+           
+        </div>
+    </footer>
+
+<!-- sub-footer -->
+
+            <div class="subfooter-box flex">
+                <h3>Connect</h3>
+                <a class="facebook" href=""><i class="fa-brands fa-facebook"></i></a>
+                <a class="insta" href=""><i class="fa-brands fa-instagram"></i></a>
+                <a class="x" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="youtube" href=""><i class="fa-brands fa-youtube"></i></a>
+                <a class="linkdin" href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a class="whatsapp" href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+</body>
+</html>

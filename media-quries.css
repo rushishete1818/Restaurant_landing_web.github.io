@@ -1,0 +1,144 @@
+@media screen and (max-width: 991px) {
+    
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    
+    .nav-toggle{
+        display: block;
+    }
+    .nav-container{
+        overflow: initial;
+        width: 100%;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -110%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        color: black;
+    }
+
+    .speciality-container{
+        gap: 20px;
+    }
+    .card{
+        min-width: calc(50% - 10px);
+        height: 250px;
+    }
+    .card p{
+        max-width: 40vw;
+    }
+    .header-container{
+        margin-inline: 20px;
+    }
+    .header-img{
+        width: 300px;
+    }
+    .header-desc{
+        max-width: 60%;
+    }
+    .nav-container{
+        left: 30px;
+    }
+    .header-container{
+        padding-block: 30px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slides img{
+        height: 300px;
+    }
+    .header-container{
+        padding-block: 0px;
+        flex-direction: column-reverse;
+        left: 50px;
+    }
+    .nav-container{
+        left: 0px;
+    }
+    .header-desc{
+        max-width: 90vw;
+    }
+    .subfooter-box a{
+        font-size: 1.4rem;
+    }
+    .book-button{
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+   
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+     font-size: 1rem;
+    }
+    .card{
+        height: 300px;
+    }
+    .food-types{
+        gap: 20px;
+    }
+    .company-logo{
+       min-width: 200px;
+       margin-right: 10px;
+    }
+    .company-logo img{
+        max-width: 60px;
+    }
+    .company-logo h2{
+        font-size: 1.3rem;
+    }
+    .company-logo{
+        gap: 10px;
+    }
+    .slides img{
+        height: 250px;
+    }
+    .header-container{
+        padding-block: 10px;
+
+    }
+    .nav-container{
+        width: 86%;
+    }
+    
+}
+
+@media screen and (max-width: 432px) {
+    .subfooter-box{
+        width: 100%;
+        gap: 25px;
+    }
+    .food-types{
+        gap: 10px;
+    }
+    .speciality-container .card{
+        height: 350px;
+        padding: 20px 10px;
+    }
+}
