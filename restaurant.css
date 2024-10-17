@@ -232,7 +232,7 @@ ul{
 }
 .slides{
     width: 100%;
-    animation: slide 10s infinite;
+    animation: slide 20s infinite;
 }
 
 @keyframes slide {
