@@ -141,4 +141,23 @@
         height: 350px;
         padding: 20px 10px;
     }
+    .slideshow-container{
+         height: 220px;
+
+    }
+    .card img{
+         max-width: 40px;
+    }
+    .breakfast-main-menu{
+        width: 100%;
+    }
+    .lunch-main-menu{
+        width: 100%;
+    }
+    .dinnernonveg-main-menu{
+        width: 100%;
+    }
+    .menu-card h3{
+        font-size: 15px;
+    }
 }
